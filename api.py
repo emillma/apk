@@ -12,7 +12,6 @@ async def main():
     async with aiohttp.ClientSession() as session:
         rep = await session.get(
             "https://apis.vinmonopolet.no/products/v0/details-normal",
-            "https://apis.vinmonopolet.no/products/v0/details-normal"
             headers=headers,
         )
         data = await rep.json()
